@@ -2,3 +2,11 @@ site_name: My Docs
 site_url: https://djmikeale.github.io/hi
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: brown
+    accent: deep orange
+  font:
+    code: Fira Code
+extra_css:
+  - stylesheets/extra.css
