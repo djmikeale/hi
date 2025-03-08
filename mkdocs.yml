@@ -1,6 +1,9 @@
-site_name: My Docs
+site_name: Hi!
 site_url: https://djmikeale.github.io/hi
 theme:
+  # favicon: material/hand-wave needs png - see https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#favicon
+  icon:
+    logo: material/hand-wave
   name: material
   palette:
     scheme: slate
@@ -8,5 +11,18 @@ theme:
     accent: deep orange
   font:
     code: Fira Code
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
 extra_css:
   - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
